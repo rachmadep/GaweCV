@@ -19,6 +19,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -68,7 +69,11 @@
         </nav>
 
         <main class="py-4">
-            @yield('content')
+          <div class="container martop-lg">
+              <div class="panel panel-default">
+                  <div class="panel-body">@yield('content')</div>
+              </div>
+          </div>
         </main>
     </div>
 </body>

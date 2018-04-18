@@ -11,10 +11,23 @@
 |
 */
 
+
+
+Auth::routes();
+
 Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
+Route::get('/home', 'HomeController@index');
 
-Route::get('/home', 'HomeController@index')->name('home');
+route::group(['middleware' => 'auth'], function(){
+  Route::get('/biodata', 'BiodataController@index');
+  Route::get('/biodata/create', 'BiodataController@create');
+  Route::get('biodata/store', 'BiodataController@store');
+  Route::get('biodata/edit/{id}', 'BiodataController@edit');
+  Route::get('biodata/update/{id}', 'BiodataController@update');
+  Route::get('biodata/show/{id}', 'BiodataController@show');
+  Route::get('biodata/delete{id}', 'BiodataController@destroy');
+
+});

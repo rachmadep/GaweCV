@@ -1,0 +1,9 @@
+/* Custom CSS */
+
+.input-group{
+  display: inline-block;
+}
+
+.input-group>.custom-file, .input-group>.custom-select, .input-group>.form-control {
+  width: 100%;
+}
