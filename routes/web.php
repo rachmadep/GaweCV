@@ -24,7 +24,7 @@ Route::get('/home', 'HomeController@index');
 route::group(['middleware' => 'auth'], function(){
   Route::get('/biodata', 'BiodataController@index');
   Route::get('/biodata/create', 'BiodataController@create');
-  Route::get('biodata/store', 'BiodataController@store');
+  Route::post('/biodata/store', 'BiodataController@store');
   Route::get('biodata/edit/{id}', 'BiodataController@edit');
   Route::get('biodata/update/{id}', 'BiodataController@update');
   Route::get('biodata/show/{id}', 'BiodataController@show');

@@ -7,3 +7,13 @@
 .input-group>.custom-file, .input-group>.custom-select, .input-group>.form-control {
   width: 100%;
 }
+
+.add_field_button, .add_field_button2{
+  margin-bottom: 5px;
+}
+
+.remove_field{
+  width: 5%;
+  float: right;
+  height: 34px;
+}
