@@ -24,8 +24,8 @@
                         <form action="" method="post">
                             {{csrf_field()}}
                             {{ method_field('DELETE') }}
-                            <a href="" class="btn btn-info btn-sm">Lihat</a>
-                            <a href="" class="btn btn-warning btn-sm">Ubah</a>
+                            <a href="/biodata/show/{{ $biodata->id }}" class="btn btn-info btn-sm">Lihat</a>
+                            <a href="/biodata/edit/{{ $biodata->id }}" class="btn btn-warning btn-sm">Ubah</a>
                             <button type="submit" class="btn btn-danger btn-sm">Hapus</button>
                         </form>
                     </td>

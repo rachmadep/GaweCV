@@ -81,6 +81,10 @@
               </div>
           </div>
         </main>
+
+        <div class="container noprint">
+          @yield('button')
+        </div>
     </div>
 
     <!-- Scripts -->
